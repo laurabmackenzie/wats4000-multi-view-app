@@ -44,7 +44,7 @@ export default {
   },
   methods: {
     validateForm: function () {
-      if ((this.username !="") && (this.email !="") && (this.password === this.passwordVerify)) {
+      if ((this.username !="") && (this.email !="") && (this.password !="") && (this.password === this.passwordVerify)) {
         this.showForm=false;
       }
       else {
